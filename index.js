@@ -19,10 +19,15 @@ function randomFetch() {
         });
 }
 
-btnGo.addEventListener('click', function() {
+function bodyGreen() {
     const body = document.querySelector('body');
 
     body.classList.add('green_theme');
+}
+
+btnGo.addEventListener('click', function() {
+    
+    bodyGreen();
 
     if (activeTitle) {
         activeTitle.remove();
